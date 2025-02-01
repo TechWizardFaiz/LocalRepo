@@ -3,52 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web Page</title>
+    <title>My Large Web Page</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            text-align: center;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
             background: #333;
             color: white;
-            padding: 15px;
-            font-size: 24px;
-        }
-        main {
             padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
         }
-        button {
-            padding: 10px 15px;
-            font-size: 16px;
+        nav {
+            background: #007bff;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background: #0056b3;
+            border-radius: 5px;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .section {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            padding: 12px 20px;
+            font-size: 18px;
             background: #007bff;
             color: white;
             border: none;
             cursor: pointer;
-            margin-top: 10px;
+            margin-top: 15px;
+            border-radius: 5px;
         }
-        button:hover {
+        .btn:hover {
             background: #0056b3;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-box {
+            width: 30%;
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-<header>My Simple Web Page</header>
+<header>Welcome to My Large Web Page</header>
 
-<main>
-    <h2>Welcome to My Website</h2>
-    <p>This is a simple webpage using HTML, CSS, and JavaScript.</p>
-    <button onclick="showMessage()">Click Me</button>
-    <p id="message"></p>
-</main>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="home" class="section">
+        <h2>Home Section</h2>
+        <p>Welcome to my large-scale web page! Here you will find various sections with useful information.</p>
+        <button class="btn" onclick="showMessage()">Click Me</button>
+        <p id="message"></p>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing high-quality web development solutions. Our team is skilled in HTML, CSS, JavaScript, and more.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-box">
+                <h3>Web Development</h3>
+                <p>We create modern and responsive websites tailored to your needs.</p>
+            </div>
+            <div class="service-box">
+                <h3>SEO Optimization</h3>
+                <p>Boost your website’s ranking with our expert SEO services.</p>
+            </div>
+            <div class="service-box">
+                <h3>App Development</h3>
+                <p>We develop mobile and desktop applications with cutting-edge technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Have questions? Feel free to reach out via the form below.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required><br><br>
+            <input type="email" placeholder="Your Email" required><br><br>
+            <textarea placeholder="Your Message" rows="4" required></textarea><br><br>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    &copy; 2025 My Website | Designed by Faizan Khan
+</footer>
 
 <script>
     function showMessage() {
-        document.getElementById('message').innerText = "Hello, Faizan Khan! Welcome to the Web Development World!";
+        document.getElementById('message').innerText = "Hello, Faizan Khan! You clicked the button!";
     }
 </script>
 
