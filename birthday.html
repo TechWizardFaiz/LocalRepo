@@ -21,54 +21,74 @@
             border-radius: 20px;
             box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
             color: #333;
+            position: relative;
+            overflow: hidden;
         }
         h1 {
-            font-size: 36px;
+            font-size: 40px;
             color: #ff4081;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
         }
         p {
-            font-size: 20px;
-            line-height: 1.6;
+            font-size: 22px;
+            line-height: 1.8;
         }
         .details {
             background: #ff4081;
             color: white;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 20px 0;
-            font-size: 18px;
-            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+            font-size: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
         }
         .button {
             display: inline-block;
-            padding: 15px 30px;
-            font-size: 20px;
+            padding: 15px 35px;
+            font-size: 22px;
             color: white;
             background: #ff007f;
             text-decoration: none;
             border-radius: 50px;
-            margin-top: 20px;
+            margin-top: 25px;
             transition: 0.3s;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
         }
         .button:hover {
             background: #d81b60;
-            transform: scale(1.1);
+            transform: scale(1.15);
+        }
+        .balloons {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 120px;
+            background: url('https://i.imgur.com/Oj0mLoe.png') no-repeat center;
+            background-size: contain;
+        }
+        .footer {
+            font-size: 18px;
+            color: #555;
+            margin-top: 30px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="balloons"></div>
         <h1>🎉 You're Invited to a Birthday Party! 🎈</h1>
         <p>Join us in celebrating <strong>Masira Khan</strong>'s special day!</p>
         <div class="details">
             <p><strong>📅 Date:</strong> 14-March-2024</p>
-            <p><strong>⏰ Time:</strong> 9:00 pm</p>
+            <p><strong>⏰ Time:</strong> 9:00 PM</p>
             <p><strong>📍 Location:</strong> Hotel Taj Mumbai</p>
         </div>
         <p>We can't wait to celebrate with you! 🎂🥳</p>
         <a href="#" class="button">RSVP Now</a>
+        <div class="footer">Made with ❤️ for a special celebration</div>
     </div>
 </body>
 </html>
