@@ -9,21 +9,24 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
         }
         header {
-            background: #2c3e50;
+            background: #1a1a2e;
             color: white;
             padding: 20px;
             text-align: center;
-            font-size: 24px;
+            font-size: 26px;
             font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         nav {
             display: flex;
             justify-content: center;
-            background: #34495e;
+            background: #16213e;
             padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         nav a {
             color: white;
@@ -31,35 +34,38 @@
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
-            transition: color 0.3s;
+            transition: color 0.3s, transform 0.2s;
         }
         nav a:hover {
             color: #f1c40f;
+            transform: scale(1.1);
         }
         .container {
             width: 80%;
-            margin: 30px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .section h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #2c3e50;
+            color: #f1c40f;
+            border-bottom: 2px solid #f1c40f;
             padding-bottom: 5px;
         }
         footer {
             text-align: center;
             padding: 15px;
-            background: #2c3e50;
+            background: #1a1a2e;
             color: white;
             position: fixed;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
