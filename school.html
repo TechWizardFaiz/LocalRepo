@@ -12,35 +12,50 @@
             background-color: #f4f4f4;
         }
         header {
-            background: #333;
+            background: #2c3e50;
             color: white;
-            padding: 15px;
+            padding: 20px;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
         nav {
             display: flex;
             justify-content: center;
-            background: #444;
-            padding: 10px;
+            background: #34495e;
+            padding: 15px;
         }
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f1c40f;
         }
         .container {
             width: 80%;
-            margin: 20px auto;
+            margin: 30px auto;
             background: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
         }
         footer {
             text-align: center;
-            padding: 10px;
-            background: #333;
+            padding: 15px;
+            background: #2c3e50;
             color: white;
             position: fixed;
             bottom: 0;
@@ -50,18 +65,36 @@
 </head>
 <body>
     <header>
-        <h1>School Management System</h1>
+        School Management System
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Students</a>
-        <a href="#">Teachers</a>
-        <a href="#">Courses</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#students">Students</a>
+        <a href="#teachers">Teachers</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
     </nav>
     <div class="container">
-        <h2>Welcome to the School Management System</h2>
-        <p>This system helps in managing students, teachers, and courses efficiently.</p>
+        <div class="section" id="home">
+            <h2>Welcome to the School Management System</h2>
+            <p>Our system helps manage students, teachers, and courses efficiently. Stay organized and keep track of important school information.</p>
+        </div>
+        <div class="section" id="students">
+            <h2>Students</h2>
+            <p>View student details, academic performance, and attendance records in one place.</p>
+        </div>
+        <div class="section" id="teachers">
+            <h2>Teachers</h2>
+            <p>Manage teacher profiles, schedules, and subjects taught efficiently.</p>
+        </div>
+        <div class="section" id="courses">
+            <h2>Courses</h2>
+            <p>Explore available courses, subjects, and class schedules.</p>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p>For any queries, reach out to us at <strong>info@schoolmanagement.com</strong></p>
+        </div>
     </div>
     <footer>
         <p>&copy; 2025 School Management System. All rights reserved.</p>
