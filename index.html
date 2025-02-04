@@ -3,36 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML Page</title>
+    <title>Stylish Index Page</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Header */
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #007bff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            background-color: white;
+            color: #007bff;
+            border-radius: 5px;
+        }
+
+        /* Content */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Ordered list */
+        ol {
+            margin: 20px;
+            padding-left: 20px;
+        }
+
+        ol li {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        /* Stylish Button */
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .navbar a {
+                margin: 5px 0;
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    
-    <p>This is a simple HTML page example. Explore and modify it as you like!</p>
-    <p>This is a paragraph of the local repository.</p>
-    <p>The new paragraph is added in feature1.</p>
-    <p>New feature added.</p>
+
+    <h1>Welcome to My Stylish Website</h1>
 
     <!-- Navigation Links -->
-    <h2>Navigation</h2>
-    <ul>
-        <li><a href="birthday.html">Birthday Page</a></li>
-        <li><a href="school.html">School Page</a></li>
-        <li><a href="web.html">Web Page</a></li>
-    </ul>
+    <div class="navbar">
+        <a href="birthday.html">🎂 Birthday Page</a>
+        <a href="school.html">🏫 School Page</a>
+        <a href="web.html">🌐 Web Page</a>
+    </div>
 
-    <!-- Adding a hyperlink -->
-    <a href="https://www.example.com" target="_blank">Visit Example</a>
-    
-    <!-- Creating an ordered list -->
-    <h2>Steps to Learn HTML</h2>
-    <ol>
-        <li>Learn basic tags and structure.</li>
-        <li>Practice with examples.</li>
-        <li>Build small projects.</li>
-    </ol>
-    
-    <!-- Adding a button -->
-    <button onclick="alert('Hello! Welcome to HTML!')">Click Me</button>
+    <div class="container">
+        <p>This is a simple yet stylish HTML page. Explore and modify it as you like!</p>
+        <p>This is a paragraph from the local repository.</p>
+        <p>The new paragraph is added in feature1.</p>
+        <p>New feature added.</p>
+
+        <h2>Steps to Learn HTML</h2>
+        <ol>
+            <li>Learn basic tags and structure.</li>
+            <li>Practice with examples.</li>
+            <li>Build small projects.</li>
+        </ol>
+
+        <!-- Button -->
+        <button class="btn" onclick="alert('Hello! Welcome to HTML!')">Click Me</button>
+    </div>
+
 </body>
 </html>
