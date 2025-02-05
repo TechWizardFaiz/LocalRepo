@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish Index Page</title>
+    <title>Modern Stylish Index Page</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Internal CSS -->
     <style>
-        /* Reset and base styles */
         * {
             margin: 0;
             padding: 0;
@@ -19,65 +18,69 @@
         }
 
         body {
-            background-color: #f4f4f4;
-            color: #333;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
             padding: 20px;
+            text-align: center;
         }
 
         /* Header */
         h1 {
-            text-align: center;
-            font-size: 36px;
+            font-size: 40px;
             margin-bottom: 20px;
-            color: #007bff;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            color: #ffcc00;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
         }
 
         /* Navigation bar */
         .navbar {
             display: flex;
             justify-content: center;
-            background-color: #007bff;
-            padding: 10px;
-            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 12px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .navbar a {
             text-decoration: none;
             color: white;
-            font-weight: 600;
-            padding: 10px 20px;
+            font-weight: bold;
+            padding: 12px 20px;
             margin: 0 10px;
+            border-radius: 6px;
             transition: all 0.3s ease-in-out;
         }
 
         .navbar a:hover {
-            background-color: white;
-            color: #007bff;
-            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffcc00;
         }
 
         /* Content */
         .container {
             max-width: 800px;
             margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(15px);
         }
 
         p {
             font-size: 18px;
             line-height: 1.6;
-            text-align: center;
             margin-bottom: 10px;
         }
 
         /* Ordered list */
         ol {
-            margin: 20px;
+            text-align: left;
+            margin: 20px auto;
             padding-left: 20px;
+            max-width: 500px;
         }
 
         ol li {
@@ -87,23 +90,24 @@
 
         /* Stylish Button */
         .btn {
-            display: block;
-            width: 200px;
-            margin: 20px auto;
-            padding: 12px;
+            display: inline-block;
+            width: 220px;
+            padding: 14px;
             font-size: 18px;
             font-weight: bold;
             text-align: center;
             color: white;
-            background-color: #28a745;
+            background: #ffcc00;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             cursor: pointer;
             transition: 0.3s ease-in-out;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .btn:hover {
-            background-color: #218838;
+            background: #ffaa00;
+            box-shadow: 0px 4px 15px rgba(255, 204, 0, 0.8);
         }
 
         /* Responsive Design */
@@ -131,7 +135,7 @@
     </div>
 
     <div class="container">
-        <p>This is a simple yet stylish HTML page. Explore and modify it as you like!</p>
+        <p>This is a modern, stylish HTML page. Explore and modify it as you like!</p>
         <p>This is a paragraph from the local repository.</p>
         <p>The new paragraph is added in feature1.</p>
         <p>New feature added.</p>
