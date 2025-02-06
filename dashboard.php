@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>My Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -18,22 +18,24 @@
             font-family: 'Inter', sans-serif;
         }
         body {
-            background: #f8f9fa;
-            color: #333;
+            background: linear-gradient(to right, #007bff, #6610f2);
+            color: white;
             text-align: center;
             padding: 20px;
         }
         .container {
             max-width: 600px;
             margin: 50px auto;
-            background: white;
+            background: rgba(255, 255, 255, 0.1);
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
         }
         h1 {
-            font-size: 28px;
-            color: #343a40;
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffeb3b;
         }
         p {
             font-size: 18px;
@@ -41,16 +43,17 @@
         }
         .logout-btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 24px;
             margin-top: 20px;
-            background: #dc3545;
+            background: #ff4444;
             color: white;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 8px;
+            font-weight: 600;
             transition: 0.3s;
         }
         .logout-btn:hover {
-            background: #c82333;
+            background: #cc0000;
         }
     </style>
 </head>
